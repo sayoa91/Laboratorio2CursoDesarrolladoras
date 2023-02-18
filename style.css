@@ -1,0 +1,73 @@
+body {
+    font-family:"Arial";
+    color: #B0BEE6;
+    background-color: #242933;
+}
+
+form {
+
+    font-size:16px;
+    font-weight: 250;
+    background-color: #2F3644;
+    border-radius: 6px;
+    border: 1px solid #3F455D;
+}
+.formulario {
+    max-width:400px;
+    margin:0 auto;
+    text-align: center;
+}
+h1 {
+    font-size: 30px;
+    text-align: left;
+    text-indent: 16%;
+}
+.campo{
+    height: 100px;
+}
+input {
+    border: 3px solid #F5F5F5;
+    padding: 10px;
+    color: black;
+    size: large;
+    width: 250px;
+    height:25px;
+}
+
+ div p{
+
+    text-indent: 16%;
+    text-align: left;      
+    line-height:0;
+}
+
+#boton{
+    color: white;
+    background-color:#6C63FF;
+    border-color:black;
+    width: 275px;
+    height:50px;
+}
+
+ .errorIcono {
+    background-image: url('images/error-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position:98%;
+}
+
+.validoIcono {
+    background-image: url('images/success-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position:98%;
+} 
+.valido{
+    border-color:#4ECA64;
+    color:#4ECA64;
+}
+.error{
+    border-color:#DB5A5A;
+    color:#DB5A5A;
+
+}

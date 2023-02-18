@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Keywords" content="registro,crear,nueva" /> 
+        <meta name="description" content="Resgistro de nueva cuenta" />
+        <title>Create acount</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="index.js"></script>    
+    </head>
+    <body>
+        <div class="formulario">
+            <form name="createAcount">
+                <h1>Create Acount</h1><br/>
+                <div class="campo">
+                    <p><label for="nombre">Nombre</label></p>
+                    <input type="text" id="nombre" class="campoFormulario"/>  <br/>
+                    <p><span id="errorNombre" class="error"></span></p>
+                </div>
+                <div class="campo">
+                    <p><label for="email">E-mail</label></p>
+                    <input type="email" id="email" class="campoFormulario"/>  <br/>
+                    <p><span id="errorEmail" class="error"></span></p>
+                </div>
+                    <div class="campo">
+                    <p><label for="password1">Clave</label></p> 
+                    <input type="password" id="password1" name="clave" class="campoFormulario"/> <br/>
+                    <p><span id="errorClave1" class="error"></span></p>
+                 </div>
+                <div class="campo">
+                    <p><label for="password2">Confirme su clave</label></p>
+                    <input type="password" id="password2" name="clave" class="campoFormulario"/> 
+                    <p><span id="errorClave2"  class="error"></span></p>
+                </div>
+                <input type="submit" value="ENVIAR" id="boton" onclick=" return enviar()"/> <br/><br/>
+            </form>
+        </div>
+    </body>
+</html>
