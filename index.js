@@ -21,37 +21,37 @@ function validar(campo,patron,error) {
 
     if (!item.value) {
         error.innerHTML = "Rellene este campo";
-        item.classList.add ("error");
-        item.classList.add ("errorIcono");
         item.classList.remove ("valido");
         item.classList.remove ("validoIcono");
+        item.classList.add ("error");
+        item.classList.add ("errorIcono");
         return false;
     }
     else if (validoPatron.test(item.value)) {
         if(patron!=3){
         error.innerHTML = "";
-        item.classList.add ("valido");
-        item.classList.add ("validoIcono");
         item.classList.remove ("error");
         item.classList.remove ("errorIcono");
+        item.classList.add ("valido");
+        item.classList.add ("validoIcono");
         return true;
         }
         else {
             if(item2.value==item.value){
                 error.innerHTML = "";
-                item.classList.add ("valido");
-                item.classList.add ("validoIcono");
                 item.classList.remove ("error");
                 item.classList.remove ("errorIcono");
+                item.classList.add ("valido");
+                item.classList.add ("validoIcono");
                 return true;
             }
             else
             {
                 error.innerHTML = "Las contraseñas deben coincidir";
-                item.classList.add ("error");
-                item.classList.add ("errorIcono");
                 item.classList.remove ("valido");
                 item.classList.remove ("validoIcono");
+                item.classList.add ("error");
+                item.classList.add ("errorIcono");
                 return false;
             }
         }
@@ -59,10 +59,10 @@ function validar(campo,patron,error) {
 
     else {
         error.innerHTML = mensaje;
-        item.classList.add ("error");
-        item.classList.add ("errorIcono");
         item.classList.remove ("valido");
         item.classList.remove ("validoIcono");
+        item.classList.add ("error");
+        item.classList.add ("errorIcono");
         return false;
     }
 
@@ -74,7 +74,7 @@ function enviar (){
     var email= validar ("email",1,"errorEmail")
     var password1= validar ("password1",2,"errorClave1")
     var password2= validar ("password2",3,"errorClave2")
-    if(nombre & email & password1 & password1){
+    if(nombre & email & password1 & password2){
         alert ("La inscripción se ha realizado correctamente");
         return true
     }
